@@ -1,0 +1,27 @@
+<core:View	xmlns:core="sap.ui.core" 
+			xmlns:html="http://www.w3.org/1999/xhtml" 
+			xmlns:mvc="sap.ui.core.mvc" 
+			xmlns="sap.m" 
+			controllerName="demo.ch.saphir.Demo_04.controllers.ViewMain">
+			
+	<Page title="Welcome Buddy" showNavButton="false" >
+		<content>
+		    <Text text="Saisissez quelque chose:" maxLines="0" id="__text2"/>
+		    <Input 
+		    	id="idInpType"
+		    	value="{binding>/myValue}">
+		    </Input>
+		    
+		    <Button id="idButton"
+		    	text="Press Me !"
+		    	type="Emphasized"
+		    	tap=""
+		    	press="navigateToSecondPage">
+		    		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		    		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		    		
+		    </Button>
+		</content>
+	</Page>
+	
+</core:View>

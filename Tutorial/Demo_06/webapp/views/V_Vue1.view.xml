@@ -1,0 +1,8 @@
+<core:View controllerName="demo.ch.saphir.Demo_06.controllers.V_Vue1" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Title">
+		<content>
+			<Button xmlns="sap.m" text="Press ME" press=".onGoToPage2">	</Button>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,91 @@
+{
+  "run": [
+    {
+      "filePath": "/Tutorial/Demo_06/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "destBackendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 5749551,
+        "displayName": "New Web Application 2"
+      }
+    },
+    {
+      "filePath": "/Tutorial/Demo_04/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 4681832,
+        "displayName": "New Web Application 5"
+      }
+    },
+    {
+      "filePath": "/Tutorial/Demo_02/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 7437013,
+        "displayName": "New Web Application 4"
+      }
+    },
+    {
+      "filePath": "/Tutorial/Demo_01/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 716672,
+        "displayName": "New Web Application 3"
+      }
+    },
+    {
+      "filePath": "/Tutorial/Demo_06_DUMMY/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "destBackendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 7821113,
+        "displayName": "New Web Application"
+      }
+    }
+  ]
+}

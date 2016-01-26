@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<!-- Compatibilité entre navigateur et format de fichier -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+	
+	<!-- Bootstrap de SAP UI5 -->
+	<script src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"		
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{"demo.ch.saphir.Demo_01": "./"}'
+				data-sap-ui-theme="sap_bluecrystal">
+	</script>
+	
+	<!-- Instanciation de l'application SAP UI5 -->
+	<script>
+		// Création de l'application
+		var myApp = new sap.m.App();
+		myApp.setInitialPage("idMyViewMain");
+		
+		// Création d'une page
+		var myPage = sap.ui.view({
+			id:"idMyViewMain", 
+			viewName:"demo.ch.saphir.Demo_01.ViewMain", 
+			type: sap.ui.core.mvc.ViewType.XML});
+			
+		// Ajouter la page à l'application 
+		myApp.addPage(myPage);
+		
+		// Ajouter l'application à notre contenu HTML
+		myApp.placeAt("MyHTMLContent");
+		
+	</script>
+		
+	<script src='https://webide-s0001836487trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/hybrid/cordovafacade/cordova.js' data-original-url='index.html'></script>
+<style>#interactive.viewport video{width:320px;height:240px;}
+#interactive.viewport .drawingBuffer{width:320px;height:240px;position:absolute;}</style></head>
+	<body>
+		<!-- Contenu HTML de notre application -->
+		<div id="MyHTMLContent"> </div>
+	</body>
+</html>

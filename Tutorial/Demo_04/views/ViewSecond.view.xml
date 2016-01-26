@@ -1,0 +1,20 @@
+<core:View 
+	controllerName="demo.ch.saphir.Demo_04.controllers.ViewSecond" 
+	xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Title" showNavButton="true" navButtonPress="navigateBack" >
+		<content>
+			<Input xmlns="sap.m"
+				id="idInpTyped"
+				value="{binding>/myValue}"
+				width=""
+				enabled="true"
+				valueState="None"
+				name=""
+				placeholder=""
+				editable="false">
+			</Input>
+			
+		</content>
+	</Page>
+</core:View>

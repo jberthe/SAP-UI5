@@ -1,0 +1,35 @@
+<html>
+	<head>
+	<!-- Compatibilité entre navigateur et format de fichier -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+	
+	<!-- Bootstrap de SAP UI5 -->
+	<script src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"		
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{"demo.ch.saphir.Demo_06_DUMMY": "./"}'
+				data-sap-ui-theme="sap_bluecrystal">
+	</script>
+	
+		<!-- Instanciation de l'application SAP UI5 -->
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			new sap.m.Shell({
+               app :new sap.ui.core.ComponentContainer({
+	               name : "demo.ch.saphir.Demo_06_DUMMY",
+	               height : "100%"
+               })
+			}).placeAt("MyHTMLContent");
+		});
+		
+	</script>
+	<script src='https://webide-s0001836487trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/hybrid/cordovafacade/cordova.js' data-original-url='index.html'></script>
+<style>#interactive.viewport video{width:320px;height:240px;}
+#interactive.viewport .drawingBuffer{width:320px;height:240px;position:absolute;}</style></head>
+	<body>
+		<!-- Contenu HTML de notre application -->
+		<div id="MyHTMLContent"> </div>
+	</body>
+</html>

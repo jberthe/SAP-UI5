@@ -1,0 +1,15 @@
+<core:View xmlns:core="sap.ui.core" 
+		  xmlns:html="http://www.w3.org/1999/xhtml" 
+		  xmlns:mvc="sap.ui.core.mvc" 
+		  xmlns="sap.m" 
+		  xmlns:sap="sap"
+		  xmlns:commons="sap.ui.commons"
+		  controllerName="demo.ch.saphir.Demo_01.ViewMain">
+	<Page title="Title" showNavButton="false" >
+		<content>
+		    <Text text="Hello World !!!!" maxLines="0" id="__text2"/>  
+		    <Button text="Toto" />
+		    <commons:Button xmlns="sap.ui.commons" text="Tata"/>
+		</content>
+	</Page>
+</core:View>

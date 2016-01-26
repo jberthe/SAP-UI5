@@ -1,0 +1,1 @@
+L'objectif de l'application est de faire un Hello World en SAP UI5.

@@ -1,0 +1,83 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "demo.ch.saphir.Demo_06_DUMMY",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"ach": "CA-UI5-DOC",
+		"dataSources": {		},
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_bluecrystal"
+		],
+		"contentDensities": {
+			"cozy": true,
+			"compact": false
+		}
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": "demo.ch.saphir.Demo_06_DUMMY.views.V_App",
+		"dependencies": {
+			"minUI5Version": "1.30",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"config": {		},
+		"models": {
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "demo.ch.saphir.Demo_06_DUMMY.views",
+				"controlId": "idAppControl",
+				"controlAggregation": "pages",
+				"transition": "slide"
+			},
+			"routes": [
+			{
+				"pattern": "",
+				"name": "vue1Route",
+				"target": "vue1Target"
+			},
+			{
+				"pattern": "vue2Pattern",
+				"name": "vue2Route",
+				"target": "vue2Target"
+			}
+			],
+			"targets": {
+				"vue1Target" : {
+					"viewName": "V_Vue1"
+				},
+				"vue2Target" : {
+					"viewName": "V_Vue2"
+				}
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "",
+		"_version": "1.1.0"
+	}
+}

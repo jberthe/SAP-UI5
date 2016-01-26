@@ -1,0 +1,62 @@
+<html>
+	<head>
+	<!-- Compatibilité entre navigateur et format de fichier -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+	
+	<!-- Bootstrap de SAP UI5 -->
+	<script src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"		
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{"demo.ch.saphir.Demo_05": "./"}'
+				data-sap-ui-theme="sap_bluecrystal">
+	</script>
+	
+	<!-- Instanciation de l'application SAP UI5 -->
+	<script>
+		// Application globale
+		var myApp;
+		
+		sap.ui.getCore().attachInit( function() {
+			// Création de l'application
+			myApp = new sap.m.App({initialPage:"idMyViewMain"});
+			
+			// Instancier le model
+			var oModelBindind = new sap.ui.model.json.JSONModel();
+			oModelBindind.loadData("models/binding.json", "", false );
+			sap.ui.getCore().setModel(oModelBindind, "binding");
+			
+			oModelBindind = new sap.ui.model.json.JSONModel();
+			oModelBindind.loadData("models/parametre.json", "", false );
+			sap.ui.getCore().setModel(oModelBindind, "settings");
+			
+			// Création d'une page
+			var myPage = sap.ui.view({
+				id:"idMyViewMain", 
+				viewName:"demo.ch.saphir.Demo_05.views.ViewMain", 
+				type: sap.ui.core.mvc.ViewType.XML});
+			
+			var mySecondPage = sap.ui.view({
+				id:"idMyViewSecond", 
+				viewName:"demo.ch.saphir.Demo_05.views.ViewSecond", 
+				type: sap.ui.core.mvc.ViewType.XML});
+				
+			// Ajouter la page à l'application 
+			myApp.addPage(myPage);
+			myApp.addPage(mySecondPage);
+		
+			// Ajouter l'application à notre contenu HTML
+			myApp.placeAt("MyHTMLContent");
+		});
+		
+		
+
+	</script>
+		
+	</head>
+	<body>
+		<!-- Contenu HTML de notre application -->
+		<div id="MyHTMLContent"> </div>
+	</body>
+</html>
